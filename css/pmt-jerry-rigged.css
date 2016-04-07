@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* > PMT JERRY-RIGGED CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES: START
+	***************************************************************************************************************/
+	
+	/* TOC: 
+	-	PMT JERRY-RIGGED CSS
+	-		- NOTES
+	-		- JERRY-RIGGED
+	
+	
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> JERRY-RIGGED: START
+	***************************************************************************************************************/
+	
+	
+	
+	/* # Jerry-rigging Tab Styles */
+	.nav.nav-tabs > li:hover > a {
+	    cursor: pointer;
+	}
+	.nav.nav-tabs > li.active:hover > a {
+	    cursor:default;
+	}
+	
+	
+	
+	
+	.nav > li > a {
+		text-decoration: none;
+
+		background-color:#e5e5e5;
+		color:rgba(0,0,0,.8);
+	}
+	
+	.nav > li.active > a,
+	.nav > li.active > a:hover
+	.nav > li.active:hover > a {
+		background-color: #ffffff;
+		border-color:rgba(0,0,0,0);
+		
+		color:rgba(0,0,0,.8);
+	}
+	
+	/* # Tab Dropshadow */
+	.nav.nav-tabs {
+		overflow:hidden;
+		border-bottom-width:0;
+		padding-left: 10px;
+		margin-left: -10px;
+		padding-top: 10px;
+		margin-top: -10px;
+	}
+
+
+	@media (max-width: 769px) { 
+		.nav.nav-tabs {
+			
+			margin-left: 0;
+			
+		}
+		
+		.nav > li > a {
+			background-color: transparent;
+			
+		}
+		
+		
+	}
+	
+		.nav-tabs > li.active {
+			z-index:20;
+			
+		}
+		
+			.nav-tabs > li > a {
+				border-color:transparent;
+				margin-right:2px;
+			}
+			
+			.nav-tabs > li.active > a {
+				box-shadow: 1px 2px 8px rgba(0,0,0,.25);
+			}
+	.tab-content {
+		z-index:10;
+		position:relative;
+		box-shadow: 0px -1px 8px rgba(0,0,0,.20);
+		background-color:#ffffff;
+	}
+		
+	
+	/*
+	*/
+	
+	
+	.nav.nav-tabs.nav-justified {
+		width:auto;
+		margin-right: -12px;
+		padding-right: 10px;
+	}
+	
+	
+	.nav-tabs.nav-justified > .active > a, 
+	.nav-tabs.nav-justified > .active > a:hover, 
+	.nav-tabs.nav-justified > .active > a:focus {
+		border-color:rgba(0,0,0,0);
+	}
+	
+	
+	
+	
+	
+	/* # Text by Meaning */
+	.pmt-accent-text {
+		color:#005d3c;
+		color:#00ba78;
+		
+		font-size:16px;
+		padding:0;
+		margin:0;
+		
+		margin-bottom:8px;
+	}
+	
+	
+	
+	
+				
+	
+	
+	
+	
+	.pmt-horizontally-condensed-table > thead > tr > th, 
+	.pmt-horizontally-condensed-table > tbody > tr > th, 
+	.pmt-horizontally-condensed-table > tfoot > tr > th, 
+	.pmt-horizontally-condensed-table > thead > tr > td, 
+	.pmt-horizontally-condensed-table > tbody > tr > td, 
+	.pmt-horizontally-condensed-table > tfoot > tr > td {
+		padding-left:5px;
+
+		padding-right:5px;
+	}
+	
+	
+	
+	/* # Bootstraps Table-striped and Table-bordered modifiers */
+	.table-striped > tbody > tr:nth-of-type(odd) {
+		background-color:rgba(0,0,0,.04);
+	}
+	
+	
+	/* # Contextual alert level row colors */
+	.pmt-alert-level-row-color--high, .pmt-alert-level-row-color--high > td  {
+		background-color:rgba(255,0,0,.07);
+	}
+	
+	.pmt-alert-level-row-color--medium, .pmt-alert-level-row-color--medium > td {
+		background-color:rgba(255,129,0,.07);
+	}
+	
+	.pmt-alert-level-row-color--low, .pmt-alert-level-row-color--low > td {
+		background-color:rgba(253,252,0,.07);
+	}
+	
+	
+	.pmt-contextual-row-color--positive {
+	}
+	
+	
+	
+	
+	/*
+	.table-bordered {
+		border-width:0;
+		border-collapse:separate;
+	}
+	.table-bordered > thead > tr > th, 
+	.table-bordered > tbody > tr > th, 
+	.table-bordered > tfoot > tr > th, 
+	.table-bordered > thead > tr > td, 
+	.table-bordered > tbody > tr > td, 
+	.table-bordered > tfoot > tr > td {
+		border-width:1px;
+		border-style:solid;
+		border-color:rgba(0,0,0,.12);
+		
+	}
+	
+	.table-bordered > thead > tr + tr > th, 
+	.table-bordered > tbody > tr + tr > th, 
+	.table-bordered > tfoot > tr + tr > th, 
+	.table-bordered > thead > tr + tr > td, 
+	.table-bordered > tbody > tr + tr > td, 
+	.table-bordered > tfoot > tr + tr > td {
+		
+		border-top-width:0;
+		
+	}
+	
+	.table-bordered > thead > tr > th + th, 
+	.table-bordered > tbody > tr > th + th, 
+	.table-bordered > tfoot > tr > th + th, 
+	.table-bordered > thead > tr > td + td, 
+	.table-bordered > tbody > tr > td + td, 
+	.table-bordered > tbody > tr > th + td, 
+	.table-bordered > tfoot > tr > td + td {
+		
+		border-left-width:0;
+		
+	}
+	*/
+	
+	
+	
+	
+	
+	.chart-pinline {
+	fill:#c0c0c0;
+	fill:#e9e9e9;
+	}
+	
+	
+	.bar-1 {
+	
+	fill:#3fa28f;
+	
+	cursor: pointer;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	
+	opacity:.75;
+	}
+	
+	.bar-2 {
+	
+	fill:#3fa28f;
+	
+	opacity:.4;
+	
+	
+	cursor: pointer;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	
+	text {
+	font-size:14px;
+	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	
+	.bar-1:hover,
+	.bar-1:focus,
+	.bar-2:hover,
+	.bar-2:focus {
+	fill: #1b5680;
+	}
+	
+	
+	media="all"
+	.st3 {
+	font-size: 14px;
+	font-family: arial;
+	}
+	
+	
+	
+	.st7.st2.st3, .st1.st2.st3, .st10.st2.st3 {
+	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	
+	
+	
+	
+	/* POPOVERS */
+	
+	.stars-small-sized-popover-container > .popover {
+		width: 350px !important;
+		max-width: 350px !important;
+	}
+	
+	
+	.popover {
+		font-family: Arial, Helvetica, sans-serif;
+		/*color: #202020;*/
+		font-size: 14px;
+		line-height: 142%;
+		text-align: left;
+		border-radius: 0;
+		padding: 0;
+	}
+	
+		.popover .popover-title {
+			padding-top: 10px;
+			padding-bottom: 8px;
+			padding-left: 13px;
+			padding-right: 13px;
+			border-radius: 0;
+			background-color: #e5e5e5;
+			border-bottom-color: #e3e3e3;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 142%;
+			text-align: left;
+		}
+		
+		.popover .popover-content {
+			padding: 13px;
+			padding-top: 11px;
+		}
+		
+		
+		.popover .popover-content > .row {
+			margin: 0;
+			padding: 0;
+			border-style: solid;
+			border-color: transparent;
+			border-width: 0;
+		}
+	
+	
+	
+	
+		
+		.nav > li:hover > a {
+			text-decoration: none;
+			background-color: #1B5680;
+			color:#ffffff;
+		}
+	
+	
+	/* JERRY-RIGGED: END
+	***************************************************************************************************************/
+	
+/* PMT JERRY-RIGGED CSS: END
+***********************************************************************************************************************/
+
+

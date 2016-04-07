@@ -1,0 +1,2639 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		
+		<title>DCB PMT Dashboard</title>
+		
+		
+		<!-------- JS -------->
+		<!---------------- jQuery JS ---------------->
+		<script src="third-party-code/jquery-2.1.1/jquery-2.1.1.js"></script>
+		
+		<!---------------- Bootstrap JS ---------------->
+		<script src="third-party-code/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		
+		<!---------------- PMT Core JS ---------------->
+		<script src="js/pmt-core.js"></script>
+		
+		
+		<!-------- CSS -------->
+		<!---------------- Bootstrap CSS ---------------->
+		<link rel="stylesheet" href="third-party-code/bootstrap-3.3.5-dist/css/bootstrap.css">
+		
+		<!---------------- Bootstrap Default Theme ---------------->
+		<link rel="stylesheet" href="third-party-code/bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+		
+		<!---------------- Simple Scaffol ---------------->
+		<link rel="stylesheet" href="third-party-code/simple-scaffol/modified-simple-scaffol.css">
+		
+		<!---------------- PMT Globals CSS ---------------->
+		<link rel="stylesheet" href="css/pmt-globals.css">
+		
+		<!---------------- PMT Components from Scratch CSS ---------------->
+		<link rel="stylesheet" href="css/pmt-components-from-scratch.css">
+		
+		<!---------------- PMT Jerry-rigged CSS ---------------->
+		<link rel="stylesheet" href="css/pmt-jerry-rigged.css">
+		
+		
+		
+	</head>
+	
+	<body>
+	
+	
+		<div class="container-fluid" style="padding:0; height:100%;">
+		
+			<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter">
+			
+				<div class="row" style="margin:0; padding:0;">
+					<div class="col-xs-12" style="background-color:#1b5680; height:auto; padding:0;">
+						
+						<div class="container-fluid" style="padding:0;">
+							<div class="row" style="margin:0;">
+								<div class="col-xs-12 col-sm-6" style="white-space:nowrap; min-height:72px; padding-top:15px;">
+									
+									<img src="images/inverted-aegis-mobile-logo.png" style="display:inline-block;">
+									<h1 class="pmt-site-title" style="display:inline-block; color:rgba(255,255,255,.75); padding:0; padding-right:60px; margin:0; font-size:18px; margin-left:22px; vertical-align:middle; top:6px; position:relative;">Portfolio Management Tool</h1>
+							
+								
+								</div>
+								
+								<div class="col-xs-12 col-sm-6 pmt-scroll-horizontally-wrapper-for-mobile" style="text-align:right; white-space:nowrap; padding-top:15px; padding-bottom:15px;">
+									
+									
+									<span style="display:inline-block; margin:0; padding:0; padding-left:20px; color:#ffffff; opacity:.6; margin-right:15px;">jdoe@verizonwireless.com</span>
+										
+									<a href="#" style="display:inline-block; margin:0; margin-left:0; margin-right:15px; padding:0; color:#ffffff; opacity:1;">Help</a>
+									<a href="#" style="display:inline-block; margin:0; margin-left:0; margin-right:15px; padding:0; color:#ffffff; opacity:1;">Sign out</a>
+									<a href="#" style="display:inline-block; margin:0; margin-left:0; margin-right:15px; padding:0; color:#ffffff; opacity:1;">Reset password</a>
+									
+									<select style="display:inline-block; margin-right:15px; padding:5px; text-align:left;">
+										<option value="volvo">DCB</option>
+										<option value="saab">CDI</option>
+									</select>
+									
+									
+								</div>
+								
+							</div>
+						
+						
+						</div>
+						
+							
+						
+					</div>
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-xs-12" style="padding:0;">
+					
+						<!-- SS Chunky Stroke: START -->
+						<div class="ss-scaffolding ss-scaffolding--chunky-stroke pmt-main-content-base">
+						
+							<div class="row">
+								<div class="col-xs-12 ss-scaffolding--open-celled" style="padding:0;">
+									
+									
+									<nav class="navbar navbar-default">
+										
+										<div class="container-fluid" style="padding:0; content:initial;">
+
+											<!-- -->
+
+											<div class="navbar-header" style="background-color:#ffffff;">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pmt-main-nav-collapser-id" style="margin-right:30px;">
+
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+												
+												
+												
+												<ul class="pmt-mobile-main-page-headings" style="padding-top:15px; padding-left:30px; padding-bottom:15px; margin-bottom:0;">
+
+
+													<li id="page-1-heading-id" class="">
+														Home
+													</li>
+													
+													<li id="page-2-heading-id" class="hidden">
+														Vetting
+													</li>
+													
+													<li id="page-3-heading-id" class="hidden">
+														Approval
+													</li>
+													
+													<li id="page-4-heading-id" class="hidden">
+														Onboarding
+													</li>
+													
+													<li id="page-5-heading-id" class="hidden">
+														Monitoring
+													</li>
+													
+													<li id="page-6-heading-id" class="hidden">
+														Revenue/Refund
+													</li>
+													
+													
+													
+													
+													<li id="page-7-heading-id" class="hidden">
+														Complaints
+													</li>
+													
+													
+													<li id="page-8-heading-id" class="hidden">
+														Reports
+													</li>
+
+													
+												</ul>
+								
+											</div>
+											
+											
+										
+
+											<!-- -->
+
+											<div class="collapse navbar-collapse" id="pmt-main-nav-collapser-id">
+												
+
+												<ul class="nav nav-tabs pmt-bs-nav-tabs--nowrap pmt-main-nav"><!--
+
+
+													--><li class="active"><a class="f-pmt-show-page-heading-1" data-target="#dashboard-home-tab-id" data-toggle="tab">Home</a></li><!--
+
+													--><li><a class="f-pmt-show-page-heading-2" data-target="#dashboard-vetting-tab-id" data-toggle="tab">Vetting</a></li><!--
+
+													--><li><a class="f-pmt-show-page-heading-3" data-target="#dashboard-approval-tab-id" data-toggle="tab">Approval</a></li><!--
+
+													--><li><a class="f-pmt-show-page-heading-4" data-target="#dashboard-onboarding-tab-id" data-toggle="tab">Onboarding</a></li><!--
+
+													--><li>
+														<a class="f-pmt-show-page-heading-5" data-target="#dashboard-monitoring-tab-id" data-toggle="tab">Monitoring</a>
+													</li><!--
+
+													--><li>
+														<a class="f-pmt-show-page-heading-6" data-target="#dashboard-revenue-refund-tab-id" data-toggle="tab">Revenue/Refund</a>
+													</li><!--
+
+													--><li>
+														<a class="f-pmt-show-page-heading-7" data-target="#dashboard-complaints-tab-id" data-toggle="tab">Complaints</a>
+													</li><!--
+
+													--><li>
+														<a class="f-pmt-show-page-heading-8" data-target="#dashboard-actions-and-workflow-tab-id" data-toggle="tab">Reports</a>
+													</li><!--
+												--></ul>
+
+											</div>
+										</div>
+									</nav>
+
+									<!-- Tab Content: START -->
+									<div class="tab-content" id="main-dashboard-tabs-id">
+									
+										<div class="tab-pane active" id="dashboard-home-tab-id">
+										
+										
+											<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter">
+											
+												<div class="row">
+													<div class="col-xs-12" style="padding:0;">
+														
+														
+														
+														<div class="ss-scaffolding ss-scaffolding--regular-stroke ss-scaffolding--transparent-stroke">
+															<div class="row">
+																<div class="col-xs-12" style="padding:0;">
+																		
+														
+																	
+														
+																	<div class="pmt-section-label pmt-section-label--alert" style="width:100%;">Alerts</div>
+																			
+														
+																	<!-- -->
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																			
+																				<!-- -->
+																				<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--responsive-with-perimeter">
+																					<div class="row">
+																						<div class="col-xs-3" style="padding:0;">
+																							
+																							
+																							
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:164px;">
+																									
+																									
+																									
+																										<div class="panel panel-default">
+
+																
+																											<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																											
+																												<h2 class="panel-title">
+
+																													Vetting
+
+																												</h2>
+																												
+																											</div>
+																											
+																											<div class="panel-body" style="padding:0;">
+
+																												<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																													<tbody>
+																														<tr>
+
+																															<td>
+																																<a href="#">
+																																	Failed Vettings
+																																</a>
+																															</td>
+
+																															<td>
+																																
+																																<!-- -->
+																																<button style="padding:0;" type="button" class="btn btn-link pmt-font-weight-bold" data-toggle="popover pmt-small-sized-popover pmt-failed-vettings-popover" data-placement="right">
+																																	2
+																																</button>
+
+																																<div class="pmt-small-sized-popover-container" id="pmt-failed-vettings-popover-container-id"></div>
+																																<!-- -->
+																															</td>
+
+																														</tr>
+
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Vettings Pending Archive for No Response
+																																</a>
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	6
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+
+																													</tbody>
+																												</table>
+																											</div>
+																												
+																										</div>
+
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+
+																							
+																							
+																						</div>
+																						
+																						<div class="col-xs-3" style="padding:0;">
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:164px;">
+																									
+																									
+																									
+																										<div class="panel panel-default">
+
+																
+																											<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																											
+																												<h2 class="panel-title">
+
+																													Onboarding
+
+																												</h2>
+																												
+																											</div>
+																											
+																											<div class="panel-body" style="padding:0;">
+
+																												<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																													<tbody>
+																														<tr>
+
+																															<td>
+																																<a href="#">
+																																	Current Failures</a> 
+																																<small>(Revisions Pending)</small>
+																															</td>
+
+																															<td>
+																																
+																																<!-- -->
+																																<button style="padding:0;" type="button" class="btn btn-link pmt-font-weight-bold">
+																																	3
+																																</button>
+
+																																
+																																<!-- -->
+																															</td>
+
+																														</tr>
+
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Aging Failures</a> 
+																																<small>(Revisions Pending)</small>
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	4
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+																														
+																														
+
+																													</tbody>
+																												</table>
+																											</div>
+																												
+																										</div>
+
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+
+																							
+
+																							
+																							
+																						</div>
+																						
+																						<div class="col-xs-3" style="padding:0;">
+																						
+																																												
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:164px;">
+																									
+																									
+																									
+																										<div class="panel panel-default">
+
+																
+																											<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																											
+																												<h2 class="panel-title">
+
+																													Monitoring
+
+																												</h2>
+																												
+																											</div>
+																											
+																											<div class="panel-body" style="padding:0;">
+
+																												<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																													<tbody>
+																														<tr>
+
+																															<td>
+																																<a href="#">
+																																	 Current Escalations</a> 
+																																
+																															</td>
+
+																															<td>
+																																
+																																<!-- -->
+																																<button style="padding:0;" type="button" class="btn btn-link pmt-font-weight-bold">
+																																	4
+																																</button>
+
+																																
+																																<!-- -->
+																															</td>
+
+																														</tr>
+
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Current Violations</a> 
+																																
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	12
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Aging Violations</a> 
+																																
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	5
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Repeat Offenders</a> 
+																																
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	8
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+
+
+
+
+
+
+
+																													</tbody>
+																												</table>
+																											</div>
+																												
+																										</div>
+
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+
+																							
+																							
+																						</div>
+																						
+																						<div class="col-xs-3" style="padding:0;">
+																						
+																																											
+																																												
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:164px;">
+																									
+																									
+																									
+																										<div class="panel panel-default">
+
+																
+																											<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																											
+																												<h2 class="panel-title">
+
+																													Revenue and Refund
+
+																												</h2>
+																												
+																											</div>
+																											
+																											<div class="panel-body" style="padding:0;">
+
+																												<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																													<tbody>
+																														<tr>
+
+																															<td>
+																																<a href="#">
+																																	 Violation: VRR >2%</a>
+																																
+																															</td>
+
+																															<td>
+																															
+																															
+																																<!-- -->
+																																<button style="padding:0;" type="button" class="btn btn-link pmt-font-weight-bold" data-toggle="popover pmt-small-sized-popover pmt-violation-vvr-popover" data-placement="left">
+																																	2
+																																</button>
+
+																																<div class="pmt-small-sized-popover-container" id="pmt-violation-vvr-popover-container-id"></div>
+																																<!-- -->
+																																
+														
+																															</td>
+
+																														</tr>
+
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	Current Month: ORR/VRR >1%</a> 
+																																
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	2
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+																														<tr>
+																															<td>
+																																<a href="#">
+																																	 Aging: ORR/VRR >1%</a> 
+																																
+																																
+																															</td>
+																																
+																																
+																															<td>
+
+																																<button style="padding:0;" type="button" class="btn btn-link">
+																																	5
+																																</button>
+																															</td>
+																																													
+
+
+																														</tr>
+																														
+																														
+
+
+																													</tbody>
+																												</table>
+																											</div>
+																												
+																										</div>
+
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+
+																							
+																							
+																						</div>
+																					</div>
+																				</div>
+																				<!-- -->
+																				
+																				
+																				
+																			</div>
+																		</div>
+																	</div>
+																	<!-- -->
+																	
+																	
+																	
+																</div>
+															</div>
+														</div>
+														<!-- -->
+														
+														
+													
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12" style="padding:0;">
+											
+														<!-- Simple Scaffol: START -->
+														<div class="ss-scaffolding ss-scaffolding--regular-stroke ss-scaffolding--transparent-stroke ss-scaffolding--responsive-with-perimeter">
+															<div class="row">
+																<div class="col-xs-4">
+																
+																	<!-- -->
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																			
+																				<!-- -->
+																				<div class="ss-scaffolding ss-scaffolding--thin-stroke">
+																					<div class="row">
+																						<div class="col-xs-12" style="padding:0;">
+																						
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:374px;">	
+																							
+																							
+																										<!-- -->
+																										<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter">
+																											<div class="row">
+																												<div class="col-xs-12" style="padding:0; height:auto;">	
+																							
+																				
+																													<!-- -->
+																													<div class="panel panel-primary" style="border-top-width:0; border-bottom-width:0; height:100%;">
+																														<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																															<h2 class="panel-title">
+																																Actions
+																															</h2>
+																														</div>
+																															
+																														<div class="panel-body" style="padding:0; height:100%;">
+																														
+																														
+																															<!-- -->
+																															<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																																<tbody>
+																																
+																																	<tr class="pmt-meaningful-row--high-alert">
+																																		<td>
+																																			<a href="#">High</a>
+																																		</td>
+																																		<td>
+																																			<a href="#">2</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	
+																																	<tr class="pmt-meaningful-row--medium-alert">
+																																		<td>
+																																			<a href="#">Medium</a>
+																																		</td>
+																																		<td>
+																																			<a href="#">7</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	<tr class="pmt-meaningful-row--low-alert">
+																																		<td>
+																																			<a href="#">Low</a>
+																																		</td>
+																																		<td>
+																																			<a href="#">5</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	
+																																	<tr>
+																																		<td>
+																																			<a class="text-danger" href="#">Past Due</a>
+																																		</td>
+																																		<td>
+																																			<a class="text-danger" href="#">5</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	
+																																</tbody>
+																															
+																															</table>
+																															<!-- -->
+																															
+																														</div>	
+																														
+																													</div>
+																													<!-- -->
+																								
+																											
+																												</div>
+																											</div>
+																											
+																											
+																											<div class="row">
+																												<div class="col-xs-12" style="padding:0; height:100%;">	
+																							
+																													
+																													<!-- -->
+																													<div class="panel panel-primary" style="border-top-width:0; border-bottom-width:0;">
+																														<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																															<h2 class="panel-title">
+																																Workflow
+																															</h2>
+																														</div>
+																															
+																														<div class="panel-body" style="padding:0;">
+																														
+																														
+																															
+																															<!-- -->
+																															<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																																<tbody>
+																																
+																																	<tr class="pmt-meaningful-row--positive">
+																																		<td>
+																																			<a href="#">Need Approval</a>
+																																		</td>
+																																		<td>
+																																			<a href="#">4</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	
+																																	<tr class="pmt-meaningful-row--positive">
+																																		<td>
+																																			<a href="#">Need Review</a>
+																																		</td>
+																																		<td>
+																																			<a href="#">2</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	<tr>
+																																		<td>
+																																			<a class="text-danger" href="#">Late</a>
+																																		</td>
+																																		<td>
+																																			<a class="text-danger" href="#">1</a>
+																																		</td>
+																																	</tr>
+																																	
+																																	
+																																
+																																</tbody>
+																															
+																															</table>
+																															<!-- -->
+																															
+																														</div>	
+																														
+																													</div>
+																													
+																													
+																													<!-- -->
+																								
+																											
+																												</div>
+																											</div>
+																										</div>
+																										<!-- -->
+																								
+																								
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+																					
+																					
+																					
+																					
+																	
+																						</div>
+																					</div>
+																				</div>
+																				<!-- -->
+																				
+																				
+																	
+																			</div>
+																		</div>
+																	</div>
+																	<!-- -->
+																
+																
+																
+																</div>
+																
+																<div class="col-xs-4">
+																
+																	<!-- -->
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																			
+																				<!-- -->
+																				<div class="ss-scaffolding ss-scaffolding--thin-stroke">
+																					<div class="row">
+																						<div class="col-xs-12" style="padding:0;">
+																						
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12" style="padding:0;">
+																									
+																									
+																									
+																										<!-- -->
+																										<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter">
+																											<div class="row">
+																												<div class="col-xs-12" style="padding:0;">
+																													
+																												
+																												
+																														<!-- -->
+																														<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--removed-pin-perimeter ss-scaffolding--auto-height">
+																															<div class="row">
+																																<div class="col-xs-12 pmt-height-auto-for-mobile" style="padding:0; min-height:372px;">
+																																
+																																
+																																
+																																	<!-- -->
+																																
+																																	<!-- -->
+																																
+																																
+																																	
+																																	<div class="panel-group f-pmt-bs-panel-group--strict" id="recent-activity-and-reports-panel-group-id" style="padding-bottom:14px; margin-bottom:0;">	
+																																
+																						
+																																		
+																																		<!-- -->
+																																		<div class="panel panel-primary" style="border-top-width:0; border-bottom-width:0;">
+																																			
+																																			<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" data-parent="#recent-activity-and-reports-panel-group-id" href="#recent-activity-recent-activity-and-reports-panel-panel-body-collapser-id">
+																																				<h2 class="panel-title">
+																																					Recent Activity
+																																					
+																																					<span class="badge pmt-bs-badge--squared pmt-bs-badge--new-notice pmt-bs-badge--absolute-right" id="recent-activity-new-notice-badge-id">
+																																						4
+																																					</span>
+																																					
+																																					
+																																					<span class="badge pmt-bs-badge--squared pmt-bs-badge--inverted-total-items pmt-bs-badge--absolute-right hidden" id="recent-activity-total-items-badge-id">
+																																						12
+																																					</span>
+																																					
+																																					
+																																					
+																																					
+																																				</h2>
+																																				
+																																				
+																																			</div>
+																																			
+																																			
+																																			
+																																			<div class="collapse" id="recent-activity-recent-activity-and-reports-panel-panel-body-collapser-id">	
+																																			<div class="panel-body" style="padding:0;">
+																																			
+																																				<!-- -->
+																																				<table class="table pmt-bs-table--vertically-condensed pmt-bs-table--value-right" style="margin-bottom:0;">
+																																					<tbody>
+																																					
+																																						<tr>
+																																							<td>
+																																								<a onclick="hide('#recent-activity-new-notice-badge-id'); showInlineBlock('#recent-activity-total-items-badge-id');" href="#">
+																																								
+																																									<strong>Vetting Requests (November)</strong>
+																																								</a>
+																																							</td>
+																																							<td>
+																																								<a onclick="hide('#recent-activity-new-notice-badge-id'); showInlineBlock('#recent-activity-total-items-badge-id');" href="#">
+																																									<strong>4</strong>
+																																								</a>	
+																																							</td>
+																																						</tr>
+																																						
+																																						
+																																						<tr>
+																																							<td>
+																																								<a href="#">Pending Vetting Approvals</a>
+																																							</td>
+																																							<td>
+																																								<a href="#">
+																																									3
+																																								</a>
+																																							</td>
+																																						</tr>
+																																						
+																																						<tr>
+																																							<td>
+																																								<a href="#">ecent Vetting Archived</a>
+																																							</td>
+																																							<td>
+																																								<a href="#">
+																																									2
+																																								</a>
+																																							</td>
+																																						</tr>
+																																						
+																																						<tr>
+																																							<td>
+																																								<a href="#">Recent SKU Approvals</a>
+																																							</td>
+																																							<td>
+																																								<a href="#">
+																																									1
+																																								</a>
+																																							</td>
+																																						</tr>
+																																						
+																																						<tr>
+																																							<td>
+																																								<a href="#">Pending Program Terminations</a>
+																																							</td>
+																																							
+																																							
+																																							<td>
+																																								<a href="#">
+																																									2
+																																								</a>
+																																							</td>
+																																							
+																																						</tr>
+																																					
+																																					
+																																					</tbody>
+																																				
+																																				</table>
+																																				<!-- -->
+																																				
+																																			</div>	
+																																			</div>
+																																			
+																																		</div>
+																																		<!-- -->
+																																		
+																																		
+																																		<!-- -->
+																																		<div class="panel panel-primary" style="border-top-width:0; border-bottom-width:0;">
+																																			<div class="panel-heading pmt-bs-panel-heading--vertically-condensed" data-toggle="collapse" data-parent="#recent-activity-and-reports-panel-group-id" href="#reports-recent-activity-and-reports-panel-panel-body-collapser-id">
+																																				<h2 class="panel-title">
+																																					Reports
+																																				</h2>
+																																			</div>
+																																				
+																																			<div class="collapse in" id="reports-recent-activity-and-reports-panel-panel-body-collapser-id">
+																																			<div class="panel-body" style="padding:0;">
+
+																																				<!-- -->
+																																						<script type="text/javascript">
+																																							$(function () {
+																																							    $('#hc-column-basic-id').highcharts({
+																																								chart: {
+																																								    type: 'column'
+																																								},
+																																								title: {
+																																								    text: 'Monthly Average Rainfall'
+																																								},
+																																								subtitle: {
+																																								    text: 'Source: WorldClimate.com'
+																																								},
+																																								xAxis: {
+																																								    categories: [
+																																									'Jan',
+																																									'Feb',
+																																									'Mar',
+																																									'Apr',
+																																									'May',
+																																									'Jun',
+																																									'Jul',
+																																									'Aug',
+																																									'Sep',
+																																									'Oct',
+																																									'Nov',
+																																									'Dec'
+																																								    ],
+																																								    crosshair: true
+																																								},
+																																								yAxis: {
+																																								    min: 0,
+																																								    title: {
+																																									text: 'Rainfall (mm)'
+																																								    }
+																																								},
+																																								tooltip: {
+																																								    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+																																								    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+																																									'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+																																								    footerFormat: '</table>',
+																																								    shared: true,
+																																								    useHTML: true
+																																								},
+																																								plotOptions: {
+																																								    column: {
+																																									pointPadding: 0.2,
+																																									borderWidth: 0
+																																								    }
+																																								},
+																																								series: [{
+																																								    name: 'Tokyo',
+																																								    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+																																								}, {
+																																								    name: 'New York',
+																																								    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+																																								}, {
+																																								    name: 'London',
+																																								    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+																																								}, {
+																																								    name: 'Berlin',
+																																								    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+																																								}]
+																																							    });
+																																							});
+																																						</script>
+																																						
+																																					<div id="hc-column-basic-id" style="min-width: 380px; max-width:420px; height: 300px; margin: 0 auto"></div>
+																																				
+																																				<!-- -->
+																																				
+																																			</div>	
+																																			
+																																			</div>
+																																			
+																																		</div>
+																																		
+																																		<!-- -->
+																																		
+																																		
+																																		<!--
+																																		</div></div></div>
+																																		</div></div></div>
+																																		</div></div></div>
+																																		</div></div></div>-->
+																																		<!-- Nested panel: START -->
+																																		
+																																		<!-- </div>
+																																		Scroll wrapper: END -->
+																																		
+																																		
+																																		</div>
+																																		
+																																		
+																																		<!-- -->
+																																		<!-- -->
+																																		
+																																		
+																																		<!-- -->
+																																		
+																																		<!-- -->
+																																		
+																																	<!--</div>-->
+																																
+																																</div>
+																															</div>
+																															
+																															
+																															<!--<div class="row">
+																																<div class="col-xs-12" style="padding:0;">
+																																
+																																
+																																	
+																																
+																																</div>
+																															</div>-->
+																														</div>
+																														<!-- -->
+																																	
+																												
+																												
+																												
+																												
+																												</div>
+																												
+																												
+																												
+																											</div>
+																										</div>
+																										<!-- -->
+																									
+																									
+																									
+																									
+																									
+																									
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+																							
+																							
+																							
+																						</div>
+																					</div>
+																				</div>
+																				<!-- -->
+																				
+																				
+																			</div>
+																		</div>
+																	</div>			
+																	<!-- -->
+																	
+																	
+																
+																</div>
+																
+																<div class="col-xs-4">
+																
+																	
+																	<!-- -->
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																			
+																				<!-- -->
+																				<div class="ss-scaffolding ss-scaffolding--thin-stroke">
+																					<div class="row">
+																						<div class="col-xs-12" style="padding:0;">
+																						
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12" style="padding:0;">
+																									
+																									
+																										<!-- Scroll wrapper: START -->
+																										<div class="pmt-scroll-vertically-wrapper" style="height:371px;">
+																									
+																									
+																											<!-- Documents main panel: START -->
+																											<div class="panel panel-primary">
+																												<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																													<h2 class="panel-title">
+																														Documents
+																													</h2>
+																												</div>
+																												
+																												<!-- panel-body: START 
+																												<div class="panel-body">
+																														
+																														
+																												</div>
+																												<!-- panel-body: END -->
+																													
+																												<!-- Nested panel: START -->
+																												<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--transparent-stroke">
+																													<div class="row">
+																														<div class="col-xs-12" style="padding:0;">
+																														
+																														
+																																
+																																<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																																	<div class="row">
+																																		<div class="col-xs-12" style="padding:0;">
+																																
+																																
+																																					<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--dark-stroke">
+																																						<div class="row">
+																																							<div class="col-xs-12" style="padding:0;">
+																																							
+																																							
+																																							
+																																							
+																																										<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darkest-stroke">
+																																											<div class="row">
+																																												<div class="col-xs-12" style="padding:0;">
+																																									
+																																									
+																																													<!-- -->
+																																																																												
+																																													<!-- Panel group: START -->
+																																													<div class="panel-group" style="margin-bottom:0;">
+																																								
+																																														<div class="panel panel-default">
+																																															<div class="panel-heading pmt-bs-panel-heading--vertically-condensed" data-toggle="collapse" href="#contractual-documents-panel-panel-body-collapser-id">
+																																																<h2 class="panel-title">
+																																																	Contractual
+																																																</h2>
+																																															</div>
+																																															<div class="collapse in" id="contractual-documents-panel-panel-body-collapser-id">	
+																																																<div class="panel-body" style="padding:0;">
+																																																
+																																																
+																																																	<!-- -->
+																																																	<div class="list-group">
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Statement of Work (SOW No. 11)</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Change Order (CO No. 005)</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Change Order (CO No. 004)</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Change Order (CO No. 003)</a>
+																																																		</div>
+																																																		
+																																																	</div>
+																																																	
+																																																	<!-- -->
+																																																	
+																																																</div>	
+																																															</div>
+																																														</div>
+																																														
+																																														<!-- Panel: START -->
+																																														<div class="panel panel-default">
+																																															<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" href="#process-documents-panel-panel-body-collapser-id">
+																																																<h2 class="panel-title">
+																																																	Process Documents
+																																																</h2>
+																																															</div>
+																																															<div class="collapse" id="process-documents-panel-panel-body-collapser-id">	
+																																																<div class="panel-body" style="padding:0;">
+																																																
+																																																	<div class="pmt-strip-label pmt-strip-label--default">
+																																																		Strip Label Example
+																																																	</div>
+																																																
+																																																	<!-- -->
+																																																	<div class="list-group">
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																		
+																																																	</div>
+																																																	
+																																																	<!-- -->
+																																																	
+																																																</div>	
+																																															</div>
+																																														</div>
+																																														<!-- Panel: END -->
+																																														
+																																														<!-- Panel: START -->
+																																														<div class="panel panel-default">
+																																															<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" href="#policies-documents-panel-panel-body-collapser-id">
+																																																<h2 class="panel-title">
+																																																	Policies
+																																																</h2>
+																																															</div>
+																																															<div class="collapse" id="policies-documents-panel-panel-body-collapser-id">	
+																																																<div class="panel-body" style="padding:0;">
+																																																
+																																																	<!-- -->
+																																																	<div class="list-group">
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																	</div>
+																																																	
+																																																	<!-- -->
+																																																	
+																																																</div>	
+																																															</div>
+																																														</div>
+																																														<!-- Panel: END -->
+																																														
+																																														<!-- Panel: START -->
+																																														<div class="panel panel-default">
+																																															<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" href="#reports-documents-panel-panel-body-collapser-id">
+																																																<h2 class="panel-title">
+																																																	Reports
+																																																</h2>
+																																															</div>
+																																															<div class="collapse" id="reports-documents-panel-panel-body-collapser-id">	
+																																																<div class="panel-body" style="padding:0;">
+																																																
+																																																
+																																																	<!-- -->
+																																																	<div class="list-group">
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																	</div>
+																																																	
+																																																	<!-- -->
+																																																	
+																																																</div>	
+																																															</div>
+																																														</div>
+																																														<!-- Panel: END -->
+																																														
+																																														<!-- Panel: START -->
+																																														<div class="panel panel-default">
+																																															<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" href="#presentations-documents-panel-panel-body-collapser-id">
+																																																<h2 class="panel-title">
+																																																	Presentations
+																																																</h2>
+																																															</div>
+																																															<div class="collapse" id="presentations-documents-panel-panel-body-collapser-id">	
+																																																<div class="panel-body" style="padding:0;">
+																																																
+																																																	<!-- -->
+																																																	<div class="list-group">
+																																																		
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		<div class="list-group-item">
+																																																			<a href="#">Placeholder content</a>
+																																																		</div>
+																																																		
+																																																	</div>
+																																																	
+																																																	<!-- -->
+																																																	
+																																																</div>	
+																																															</div>
+																																														</div>
+																																														<!-- Panel: END -->
+																																														
+																																													</div>
+																																													<!-- Panel group: END -->
+																																																								
+																																													
+																																													<!-- -->
+																																										
+																																										
+																																												</div>
+																																											</div>		
+																																										</div>
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							
+																																							</div>
+																																						</div>		
+																																					</div>
+																														
+																														
+																														
+																														
+																														
+																																		</div>
+																																	</div>
+																																</div>
+																												
+																															
+																															
+																															
+																														</div>
+																													</div>		
+																												</div>
+																												<!-- Nested panel: END -->
+																												
+																													
+																													
+																													
+																													
+																											</div>
+																											<!-- Documents main panel: START -->
+																											
+																										
+																										
+																										</div>				
+																										<!-- Scroll wrapper: END -->
+																									
+																									
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+																							
+																							
+																							
+																						</div>
+																					</div>
+																				</div>
+																				<!-- -->
+																				
+																				
+																				
+																				
+																			</div>
+																		</div>
+																	</div>
+																	<!-- -->
+																
+																
+																
+																
+																</div>
+															</div>
+														</div>
+														<!-- Simple Scaffol: END -->
+													
+													</div>
+												</div>
+												
+												
+												
+												<div class="row">
+													<div class="col-xs-12" style="padding:0;">
+														
+														
+														<div class="ss-scaffolding ss-scaffolding--regular-stroke ss-scaffolding--transparent-stroke">
+															
+															<div class="row">
+																<div class="col-xs-12" style="padding:0;">
+																	
+																	
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																				
+																				
+																				<div class="ss-scaffolding ss-scaffolding--thin-stroke">
+																				
+																					<div class="row">
+																						<div class="col-xs-12" style="padding:0;">
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																				
+																								<div class="row">
+																									<div class="col-xs-12" style="padding:0;">
+
+
+
+																																						<!-- -->
+
+
+
+
+																										<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter ss-scaffolding--responsive-without-perimeter">
+																											<div class="row">
+																												<div class="col-xs-6" style="padding:0;">
+
+																													<!-- -->
+
+
+
+
+																													<!-- Portfolio Status main panel: START -->
+																													<div class="panel panel-primary">
+																														<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																															<h2 class="panel-title">
+																																Portfolio Status
+																															</h2>
+																														</div>
+
+																														<!-- panel-body: START -->
+																														<div class="panel-body">
+																														
+																														
+																														
+																															<script type="text/javascript">
+																																$(function () {
+																																    $('#hc-bar-stacked-id').highcharts({
+																																	chart: {
+																																	    type: 'bar'
+																																	},
+																																	title: {
+																																	    text: 'Stacked bar chart'
+																																	},
+																																	xAxis: {
+																																	    categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+																																	},
+																																	yAxis: {
+																																	    min: 0,
+																																	    title: {
+																																		text: 'Total fruit consumption'
+																																	    }
+																																	},
+																																	legend: {
+																																	    reversed: true
+																																	},
+																																	plotOptions: {
+																																	    series: {
+																																		stacking: 'normal'
+																																	    }
+																																	},
+																																	series: [{
+																																	    name: 'John',
+																																	    data: [5, 3, 4, 7, 2]
+																																	}, {
+																																	    name: 'Jane',
+																																	    data: [2, 2, 3, 2, 1]
+																																	}, {
+																																	    name: 'Joe',
+																																	    data: [3, 4, 4, 2, 5]
+																																	}]
+																																    });
+																																});
+																															</script>
+																														
+																														
+																															
+																															<div id="hc-bar-stacked-id" style="min-width: 420px; max-width: 420px; height: 300px; margin: 0 auto"></div>
+																														
+																														
+																														
+																														
+
+																															<!--
+
+																															<div style="display:block; padding-left:50px; position:absolute; top:20px; overflow:hidden;">
+																															
+																															
+																																
+
+																															
+																															
+																															
+																															
+																															</div>
+																															-->
+
+
+
+																														</div>
+																														<!-- panel-body: END -->
+
+																														<!-- Nested panel: START -->
+																														<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--transparent-stroke">
+																															<div class="row">
+																																<div class="col-xs-12" style="padding:0;">
+
+
+
+																																	<!-- Scroll wrapper: START 
+																																	<div class="pmt-scroll-vertically-wrapper">-->
+
+
+
+																																		<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																																			<div class="row">
+																																				<div class="col-xs-12" style="padding:0;">
+
+
+																																							<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--dark-stroke">
+																																								<div class="row">
+																																									<div class="col-xs-12" style="padding:0;">
+
+
+
+
+																																												<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darkest-stroke">
+																																													<div class="row">
+																																														<div class="col-xs-12" style="padding:0;">
+
+
+																																															<!-- -->
+
+																																															<!-- Panel group: START -->
+																																															<div class="panel-group" style="margin-bottom:0;">
+
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed" data-toggle="collapse" href="#portfolio-size-portfolio-status-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Portfolio Size
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse in" id="portfolio-size-portfolio-status-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Statement of Work (SOW No. 11)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 005)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 004)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 003)</a>
+																																																				</div>
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+
+																																																<!-- Panel: START -->
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed" data-toggle="collapse" href="#recent-activity-portfolio-status-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Recent Activity
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse" id="recent-activity-portfolio-status-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Placeholder content</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Placeholder content</a>
+																																																				</div>
+
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+																																																<!-- Panel: END -->
+
+
+																																															</div>
+																																															<!-- Panel group: END -->
+
+
+																																															<!-- -->
+
+
+																																														</div>
+																																													</div>		
+																																												</div>
+
+
+
+
+
+
+																																									</div>
+																																								</div>		
+																																							</div>
+
+
+
+
+
+																																				</div>
+																																			</div>
+																																		</div>
+
+
+
+
+																																	<!--</div>				
+																																	 Scroll wrapper: END -->
+
+
+
+
+																																</div>
+																															</div>		
+																														</div>
+																														<!-- Nested panel: END -->
+
+
+
+
+
+																													</div>
+																													<!-- Portfolio Status main panel: START -->
+
+
+																													<!-- -->
+
+																												</div>
+																												<div class="col-xs-6" style="padding:0;">
+
+
+
+																													<!-- -->
+																																														<!-- Portfolio Performance main panel: START -->
+																													<div class="panel panel-primary">
+																														<div class="panel-heading pmt-bs-panel-heading--vertically-condensed">
+																															<h2 class="panel-title">
+																																Portfolio Performance
+																															</h2>
+																														</div>
+
+																														<!-- panel-body: START -->
+																														<div class="panel-body">
+																														
+																														
+																															<!-- -->
+																															<script type="text/javascript">
+$(function () {
+    $('#hc-bar-basic-id').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Historic World Population by Region'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        },
+        xAxis: {
+            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Population (millions)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Year 1800',
+            data: [107, 31, 635, 203, 2]
+        }, {
+            name: 'Year 1900',
+            data: [133, 156, 947, 408, 6]
+        }, {
+            name: 'Year 2012',
+            data: [1052, 954, 4250, 740, 38]
+        }]
+    });
+});
+		</script>
+		
+																															<div id="hc-bar-basic-id" style="min-width: 420px; max-width:420px; height: 300px; margin: 0 auto"></div>
+																															
+																															<!-- -->
+
+
+
+
+																														</div>
+																														<!-- panel-body: END -->
+
+																														<!-- Nested panel: START -->
+																														<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--transparent-stroke">
+																															<div class="row">
+																																<div class="col-xs-12" style="padding:0;">
+
+
+
+																																	<!-- Scroll wrapper: START 
+																																	<div class="pmt-scroll-vertically-wrapper">-->
+
+
+
+																																		<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																																			<div class="row">
+																																				<div class="col-xs-12" style="padding:0;">
+
+
+																																							<div class="ss-scaffolding ss-scaffolding--thin-stroke ss-scaffolding--dark-stroke">
+																																								<div class="row">
+																																									<div class="col-xs-12" style="padding:0;">
+
+
+
+
+																																												<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darkest-stroke">
+																																													<div class="row">
+																																														<div class="col-xs-12" style="padding:0;">
+
+
+																																															<!-- -->
+
+																																															<!-- Panel group: START -->
+																																															<div class="panel-group" style="margin-bottom:0;">
+
+																																																<!-- Panel: START -->
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed" data-toggle="collapse" href="#portfolio-integrity-rating-portfolio-performance-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Portfolio Integrity Rating
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse in" id="portfolio-integrity-rating-portfolio-performance-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Aggregate </a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Vetting</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">In-Market</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Revenue</a>
+																																																				</div>
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+																																																<!-- Panel: END -->
+
+
+																																																<!-- Panel: START -->
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed pmt-bs-panel-heading--positive" data-toggle="collapse" href="#top-revenue-portfolio-performance-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Top Revenue
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse" id="top-revenue-portfolio-performance-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Statement of Work (SOW No. 11)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 005)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 004)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 003)</a>
+																																																				</div>
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+																																																<!-- Panel: END -->
+
+
+																																																<!-- Panel: START -->
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed pmt-bs-panel-heading--negative" data-toggle="collapse" href="#top-violations-portfolio-performance-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Top Violations
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse" id="top-violations-portfolio-performance-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Statement of Work (SOW No. 11)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 005)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 004)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 003)</a>
+																																																				</div>
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+																																																<!-- Panel: END -->
+
+
+
+																																																<!-- Panel: START -->
+																																																<div class="panel panel-default">
+																																																	<div class="panel-heading pmt-bs-panel-heading--vertically-condensed collapsed pmt-bs-panel-heading--negative" data-toggle="collapse" href="#top-refunds-portfolio-performance-panel-panel-body-collapser-id">
+																																																		<h2 class="panel-title">
+																																																			Top Refunds
+																																																		</h2>
+																																																	</div>
+																																																	<div class="collapse" id="top-refunds-portfolio-performance-panel-panel-body-collapser-id">	
+																																																		<div class="panel-body" style="padding:0;">
+
+
+																																																			<!-- -->
+																																																			<div class="list-group">
+
+																																																				<div class="list-group-item">
+																																																					<a href="#">Statement of Work (SOW No. 11)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 005)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 004)</a>
+																																																				</div>
+																																																				<div class="list-group-item">
+																																																					<a href="#">Change Order (CO No. 003)</a>
+																																																				</div>
+
+																																																			</div>
+
+																																																			<!-- -->
+
+																																																		</div>	
+																																																	</div>
+																																																</div>
+																																																<!-- Panel: END -->
+
+
+
+
+																																															</div>
+																																															<!-- Panel group: END -->
+
+
+																																															<!-- -->
+
+
+																																														</div>
+																																													</div>		
+																																												</div>
+
+
+
+
+
+
+																																									</div>
+																																								</div>		
+																																							</div>
+
+
+
+
+
+																																				</div>
+																																			</div>
+																																		</div>
+
+
+
+
+																																	<!--</div>				
+																																	 Scroll wrapper: END -->
+
+
+
+
+																																</div>
+																															</div>		
+																														</div>
+																														<!-- Nested panel: END -->
+
+
+
+
+
+																													</div>
+																													<!-- Portfolio Performance main panel: START -->
+
+
+
+																													<!-- -->
+
+
+																												</div>
+
+																											</div>
+
+																										</div>
+
+																										
+																										<!-- -->
+
+
+
+																									</div>
+																								</div>
+
+																							</div>
+																						
+																						
+																						
+																						
+																							<!-- -->
+																						
+																						
+																						
+																						
+																						</div>
+																					</div>
+																				
+																				</div>
+																			
+																			</div>
+																		</div>
+																	
+																	</div>
+																	
+																	
+																	
+																</div>
+															</div>
+														
+														</div>
+														
+													</div>
+													
+												</div>
+												
+												
+												
+												<div class="row">
+													<div class="col-xs-12" style="padding:0;">
+
+														
+														
+														
+													
+													
+													</div>
+												</div>
+												
+												
+													
+											</div>
+										</div>
+										
+										<div class="tab-pane" id="dashboard-vetting-tab-id">
+										
+											
+											
+											<!-- -->
+																						<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke ss-scaffolding--removed-pin-perimeter">
+											
+												<div class="row">
+													<div class="col-xs-12" style="padding:0;">
+														
+														
+														
+														<div class="ss-scaffolding ss-scaffolding--regular-stroke ss-scaffolding--transparent-stroke">
+															<div class="row">
+																<div class="col-xs-12" style="padding:0;">
+																		
+																	<!--
+																	<div style="display:block; height:27px; margin-top:15px;">
+																
+																		<div class="pmt-section-label pmt-section-label--default">Vetted Companies </div>
+																	</div>			
+																	-->
+																	<!-- -->
+																	<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																		<div class="row">
+																			<div class="col-xs-12" style="padding:0;">
+																			
+																			
+																				<!-- -->
+																				<div class="ss-scaffolding ss-scaffolding--regular-stroke">
+																					<div class="row">
+																						<div class="col-xs-12" style="padding:0;">
+																						
+																						
+																						
+																							<!-- -->
+																							<div class="ss-scaffolding ss-scaffolding--pin-stroke ss-scaffolding--darker-stroke">
+																								<div class="row">
+																									<div class="col-xs-12" style="padding:0;">
+																									
+																									
+																									
+																										
+																										<!-- -->
+																										<!-- -->
+																										
+																										<table class="ss-scaffolding table-striped">
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																											
+																											<tr>
+																												<td style="padding:8px; width:100%; padding-left:15px;">
+																													Acme Mobile
+																												</td>
+																												
+																												<td style="padding:8px;">
+																													<a href="#">Network</a>
+																												</td>
+																												<td style="padding:8px; padding-right:15px;">
+																													<a href="#">Map</a>
+																												</td>
+																											</tr>
+																										
+																										
+																										</table>
+																											
+																										
+																										
+																										
+																										<!-- -->
+																										
+																										<!-- -->
+																									
+																									
+																									</div>
+																								</div>
+																							</div>
+																							<!-- -->
+																							
+																							
+																						</div>
+																					</div>
+																				</div>
+																				<!-- -->
+																				
+																				
+																				
+																			</div>
+																		</div>
+																	</div>
+																	<!-- -->
+																	
+																	
+																	
+																</div>
+															</div>
+														</div>
+														<!-- -->
+														
+														
+													
+													</div>
+												</div>
+												
+												
+												
+												
+												
+												
+												
+												
+													
+											</div>
+											
+											<!-- -->
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-approval-tab-id">
+										
+											Approval Pane
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-onboarding-tab-id">
+										
+											Onboarding Pane
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-monitoring-tab-id">
+										
+											Monitoring Pane
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-revenue-refund-tab-id">
+										
+											Revenue/Refund Pane
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-complaints-tab-id">
+										
+											Complaints Pane
+										
+										</div>
+										
+										<div class="tab-pane" id="dashboard-actions-and-workflow-tab-id">
+										
+											Reports Pane
+										
+										</div>
+									
+									</div>
+									<!-- Tab Content: END -->
+									
+								</div>
+							</div>
+									
+						</div>			
+						<!-- SS Chunky Stroke: END -->
+								
+					</div>
+				</div>
+				
+				
+			</div>
+		
+		
+		
+			
+		
+		</div>
+		
+		
+		<!-- Example popover content = Failed Vettings -->
+		<div class="hidden" id="pmt-failed-vettings-popover-id">
+			
+			<div class="ss-scaffolding ss-scaffolding--regular-padding">
+				<div class="row">
+					<div class="col-xs-7">
+						<a href="#">Acme Mobile</a>
+					</div>
+					<div class="col-xs-3">
+
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-globe text-muted"></span> Network</a>
+
+					</div>
+					<div class="col-xs-2">
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-map-marker pmt-red-text"></span> Map</a>
+
+					</div>
+				</div>
+
+
+
+				
+				<div class="row">
+					<div class="col-xs-7">
+						<a href="#">New Connect Mobile </a>
+					</div>
+					<div class="col-xs-3">
+
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-globe text-muted"></span> Network</a>
+
+					</div>
+					<div class="col-xs-2">
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-map-marker pmt-red-text"></span> Map</a>
+
+					</div>
+				</div>
+
+				
+			
+			</div>
+			
+		</div>
+
+		
+		
+		
+		<!-- Example popover content = Violation VVR -->
+		<div class="hidden" id="pmt-violation-vvr-popover-id">
+			
+			<div class="ss-scaffolding ss-scaffolding--regular-padding">
+				<div class="row">
+					<div class="col-xs-8">
+						<a href="#">Violation Exp 1</a>
+					</div>
+					
+					<div class="col-xs-2">
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-calendar text-muted"></span> January</a>
+
+					</div>
+					
+					<div class="col-xs-2">
+
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-exclamation-sign text-warning"></span> 1.1%</a>
+
+					</div>
+					
+				</div>
+
+
+
+
+				<div class="row">
+					<div class="col-xs-8">
+						<a href="#">Violation Exp 2</a>
+					</div>
+					<div class="col-xs-2">
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-calendar text-muted"></span> January</a>
+
+					</div>
+					
+					<div class="col-xs-2">
+
+						<a style="white-space:nowrap;" href="#"><span class="glyphicon glyphicon-exclamation-sign text-warning"></span> 1.6%</a>
+
+					</div>
+				</div>
+
+
+
+
+			
+			</div>
+			
+		</div>
+
+	
+	
+	
+	</body>
+	
+	
+	<!-- -->
+	
+	
+	
+	
+		
+	<script>
+		$(function(){
+			$('[data-toggle="popover pmt-small-sized-popover pmt-failed-vettings-popover"]').popover({ 
+				container: '#pmt-failed-vettings-popover-container-id',
+				html : true,
+				title : 'Failed Vettings',
+				content: function() {
+					return $('#pmt-failed-vettings-popover-id').html();
+				}
+			});
+		});
+		
+		
+		$(function(){
+			$('[data-toggle="popover pmt-small-sized-popover pmt-violation-vvr-popover"]').popover({ 
+				container: '#pmt-violation-vvr-popover-container-id',
+				html : true,
+				title : 'Violation: VRR >2%',
+				content: function() {
+					return $('#pmt-violation-vvr-popover-id').html();
+				}
+			});
+		});
+		
+		
+		
+		
+		
+	</script>
+</html>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+

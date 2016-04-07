@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* > PMT COMPONENTS FROM SCRATCH CSS: START
+***********************************************************************************************************************/
+	/**************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> NOTES {}: START
+	***************************************************************************************************************/
+	
+	/* TOC: 
+	-	PMT COMPONENTS FROM SCRATCH CSS
+	-		- NOTES
+	-		- COMPONENTS FROM SCRATCH
+				- POPOVERS
+					- BASE PROPERTIES
+					- COLOR AND SIZE VARIANTS
+	
+	
+	/* NOTES: END
+	***************************************************************************************************************/
+	/*
+	********
+	********
+	********
+	*/
+	/* >> COMPONENTS FROM SCRATCH {}: START
+	***************************************************************************************************************/
+		/******************************************************************************************************/
+		/*
+		********
+		********
+		********
+		*/
+		/* >>> POPOVERS {}: START
+		*******************************************************************************************************/
+			/*
+			********
+			********
+			********
+			*/
+			/* >>>> BASE PROPERTIES {}: START
+			***********************************************************************************************/
+			.popover {
+				/*
+				font-family:Arial, Helvetica, sans-serif;
+				color:#202020;
+				
+				font-size:13px;
+				line-height:142%;
+				*/
+				text-align:left;
+				
+				border-radius:0;
+				
+				padding:0;
+				
+				text-shadow: none;
+			}
+				.popover.bottom > .arrow::after {
+					border-bottom-color:#e5e5e5;
+				}
+				.popover .popover-title {
+					padding-top:10px;
+					padding-bottom:8px;
+					padding-left:13px;
+					padding-right:13px;
+					
+					border-radius:0;
+					
+					background-color:#e5e5e5;
+					
+					border-bottom-color:#e3e3e3;
+					
+					font-weight:normal;
+					font-size:13px;
+					line-height:142%;
+					text-align:left;
+				}
+				.popover .popover-content {
+					padding:13px;
+					padding-top:11px;
+				}
+			
+			/* BASE PROPERTIES: END
+			***********************************************************************************************/
+			/*
+			********
+			********
+			********
+			*/
+			/* >>>> COLOR AND SIZE VARIANTS {}: START
+			***********************************************************************************************/
+			/* 
+			# Contextual color styles *//* 
+			Matching bubble style arrow to context color */
+			.pmt-primary-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#1b5680;
+			}
+			.pmt-attention-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#ff2c00;
+			}
+			.pmt-success-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#3ec000;
+			}
+			.pmt-info-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#338bff;
+			}
+			.pmt-warning-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#e6b100;
+			}
+			.pmt-danger-popover > .popover.bottom > .arrow::after {
+				border-bottom-color:#bf0000;
+			}
+			/* 
+			Popover heading/title contextual styles */
+			.pmt-primary-popover > .popover > .popover-title {
+				background-color:#1b5680;
+				color:#ffffff;
+			}
+			.pmt-attention-popover > .popover > .popover-title {
+				background-color:#ff2c00;
+				color:#ffffff;
+			}
+			.pmt-success-popover > .popover > .popover-title {
+				background-color:#3ec000;
+				color:#ffffff;
+			}
+			.pmt-info-popover > .popover > .popover-title {
+				background-color:#338bff;
+				color:#ffffff;
+			}
+			.pmt-warning-popover > .popover > .popover-title {
+				background-color:#e6b100;
+				color:#ffffff;
+			}
+			.pmt-danger-popover > .popover > .popover-title {
+				background-color:#bf0000;
+				color:#ffffff;
+			}
+			
+			/* 
+			# Size variants *//* 
+			## Small */
+			.pmt-small-sized-popover-container > .popover {
+				width:350px !important;
+				max-width:350px !important;
+				position: absolute;
+			}
+			
+			/* 
+			## Medium */
+			.pmt-medium-sized-popover-container > .popover {
+				width:525px !important;
+				max-width:525px !important;
+				position: absolute;
+			}
+			
+			/* 
+			## Large */
+			.pmt-large-sized-popover-container > .popover {
+				width:788px !important;
+				max-width:788px !important;
+				position: absolute;
+			}
+			
+			/* COLOR AND SIZE VARIANTS: END
+			***********************************************************************************************/
+			
+		/* POPOVERS: END
+		*******************************************************************************************************/
+		/*
+		********
+		********
+		********
+		*/
+		/* >>> SECTION LABELS {}: START
+		*******************************************************************************************************/
+
+		/* # Section Label base component */
+		.pmt-section-label {
+			margin: 0;
+			
+			
+			padding: 15px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 15px;
+			padding-right: 15px;
+			
+			line-height: 1;
+			
+			
+			display: block;
+			
+			font-size: 13px;
+			font-weight: bold;
+		}
+
+
+		/* # Modifiers by - Meaning */
+		.pmt-section-label--alert {
+			background-color: #bf0000;
+			color: #ffffff;
+
+		} 
+
+
+
+		/* SECTION LABELS: END
+		*******************************************************************************************************/
+		/*
+		********
+		********
+		********
+		*/
+		/* >>> STRIP LABELS {}: START
+		*******************************************************************************************************/
+
+		/* # Strip Label */
+		.pmt-strip-label {
+			display:block;
+			padding:15px;
+			padding-bottom:1px;
+			padding-top:3px;
+
+			margin:0;
+
+			font-size:12px;
+			font-weight:bold;
+
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgba(0,0,0,.0);
+		}
+
+		/* 	## Modifiers for Strip Label */
+			/* Default */
+			.pmt-strip-label--default {
+				background-color:#e5e5e5;
+				color:rgba(0,0,0,.45);
+			}
+
+
+
+		/* STRIP LABELS: END
+		*******************************************************************************************************/
+	
+	/* COMPONENTS FROM SCRATCH: END
+	***************************************************************************************************************/
+	
+/* PMT COMPONENTS FROM SCRATCH CSS: END
+***********************************************************************************************************************/
+
+
